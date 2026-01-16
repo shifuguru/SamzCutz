@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16161a" />
+      <stop offset="1" stop-color="#050505" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#g2)" />
+  <circle cx="320" cy="320" r="180" fill="none" stroke="#d4af37" stroke-width="12" opacity="0.6" />
+  <path d="M180 420 Q320 220 460 420" fill="none" stroke="#d7d7d9" stroke-width="20" stroke-linecap="round" />
+  <text x="160" y="140" fill="#d4af37" font-family="'Space Grotesk', sans-serif" font-size="36">Beard detailing</text>
+</svg>

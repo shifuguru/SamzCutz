@@ -1,0 +1,38 @@
+{
+  "name": "samzcutz",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Samzcutz — premium Wellington barber landing page built with Vite, React, TypeScript, and Tailwind CSS.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "vite",
+    "react",
+    "tailwind",
+    "typescript",
+    "barber",
+    "landing-page"
+  ],
+  "author": "Samuel Diaz",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.8",
+    "@types/react-dom": "^18.3.2",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8"
+  }
+}
