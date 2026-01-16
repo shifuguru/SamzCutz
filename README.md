@@ -47,7 +47,7 @@ echo "VITE_BOOKING_WEBHOOK=https://your-webhook-endpoint" > .env.local
 ## Deployment
 - The workflow `.github/workflows/deploy-pages.yml` builds the site on pushes to `main` and publishes the `dist` folder to GitHub Pages.
 - Ensure the repository's Pages settings target the `gh-pages` branch deployed by the workflow.
-- `vite.config.ts` automatically switches the build `base` to `/<repo-name>/` whenever GitHub Actions sets `GITHUB_REPOSITORY`, so the bundled assets load correctly on Pages. Local `npm run dev` / `npm run build` stay rooted at `/`.
+- `vite.config.ts` automatically switches the build `base` to `/<repo-name>/` whenever GitHub Actions sets `GITHUB_REPOSITORY` (or to whatever you set via `VITE_BASE_PATH`), so the bundled assets load correctly on Pages. Local `npm run dev` / `npm run build` stay rooted at `/`.
 - Update `index.html` canonical + JSON-LD URLs once the production domain is confirmed.
 
 ## Accessibility & performance notes
