@@ -143,7 +143,10 @@ function BookingForm() {
       setSelectedAddOnIds([]);
       return;
     }
-    setSelectedAddOnIds((prev) => prev.filter((addOnId) => daySchedule.services.includes(addOnId)));
+    const servicesForDay = daySchedule.services as readonly string[];
+    setSelectedAddOnIds((prev) =>
+      prev.filter((addOnId) => servicesForDay.includes(addOnId))
+    );
   }, [daySchedule]);
 
   const availableSlots = useMemo(() => {
